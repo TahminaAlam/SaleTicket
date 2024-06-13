@@ -1,0 +1,737 @@
+{
+	"info": {
+		"_postman_id": "e333f97e-3594-46a5-9749-ec544b9d04d7",
+		"name": "WebProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "24308529",
+		"_collection_link": "https://blue-escape-938412.postman.co/workspace/WenTech~91305c15-4611-46d9-8415-70d7e103d417/collection/24308529-e333f97e-3594-46a5-9749-ec544b9d04d7?action=share&source=collection_link&creator=24308529"
+	},
+	"item": [
+		{
+			"name": "Local",
+			"item": [
+				{
+					"name": "Employee",
+					"item": [
+						{
+							"name": "Get All Employees",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8080/api/employees"
+							},
+							"response": []
+						},
+						{
+							"name": "Add Employee",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\": \"Rahim\",\n    \"lastName\": \"Karim\",\n    \"email\": \"rahim@gmail.com\"\n}"
+								},
+								"url": "http://localhost:8080/api/employees"
+							},
+							"response": []
+						},
+						{
+							"name": "Update Employee",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"firstName\": \"Rahim\",\n    \"lastName\": \"Khayer 2\",\n    \"email\": \"rahim@gmail.com\"\n}"
+								},
+								"url": "http://localhost:8080/api/employees"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Employee by ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8080/api/employees/1"
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Employee by ID",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "http://localhost:8080/api/employees/1"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Passenger",
+					"item": [
+						{
+							"name": "Get All Passengers",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8080/api/passengers"
+							},
+							"response": []
+						},
+						{
+							"name": "Add Passenger",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"passengerName\": \"Saniyat\",\n    \"passengerEmail\": \"saniyat@gmail.com\",\n    \"passport\": \"EA00000001\"\n}"
+								},
+								"url": "http://localhost:8080/api/passengers"
+							},
+							"response": []
+						},
+						{
+							"name": "Update Passenger",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"passengerName\": \"Saniyat Al Ahmed\",\n    \"passengerEmail\": \"saniyat@gmail.com\",\n    \"passport\": \"EA00000001\"\n}"
+								},
+								"url": "http://localhost:8080/api/passengers"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Passenger by ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8080/api/passengers/2"
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Passenger by ID",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "http://localhost:8080/api/passengers/2"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Sale",
+					"item": [
+						{
+							"name": "Get All Sales",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8080/api/sales"
+							},
+							"response": []
+						},
+						{
+							"name": "Add Sale",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"createdAt\": \"2023-12-05\"\n}"
+								},
+								"url": "http://localhost:8080/api/sales"
+							},
+							"response": []
+						},
+						{
+							"name": "Update Sale",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"createdAt\": \"2023-12-06\"\n}"
+								},
+								"url": "http://localhost:8080/api/sales"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Sale by ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8080/api/sales/1"
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Sale by ID",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "http://localhost:8080/api/sales/1"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Ticket",
+					"item": [
+						{
+							"name": "Get All Tickets",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8080/api/tickets"
+							},
+							"response": []
+						},
+						{
+							"name": "Add Ticket",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"departure\": \"dhaka\",\n    \"destination\": \"india\",\n    \"journeyDate\": \"2023-12-06\",\n    \"airline\": \"biman\",\n    \"baseFare\": \"20000\",\n    \"tax\": \"505\",\n    \"totalFare\": \"30000\"\n}"
+								},
+								"url": "http://localhost:8080/api/tickets"
+							},
+							"response": []
+						},
+						{
+							"name": "Update Ticket",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"departure\": \"dhaka\",\n    \"destination\": \"india\",\n    \"journeyDate\": \"2023-12-06T00:00:00.000+00:00\",\n    \"airline\": \"novo\",\n    \"baseFare\": 20000.0,\n    \"tax\": 505.0,\n    \"totalFare\": 30000.0\n}"
+								},
+								"url": "http://localhost:8080/api/tickets"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Ticket by ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8080/api/tickets/1"
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Ticket by ID",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "http://localhost:8080/api/tickets/1"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Register",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstname\": \"John\",\n    \"lastname\": \"Doe\",\n    \"email\": \"john@gmail.com\",\n    \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/auth/register"
+					},
+					"response": []
+				},
+				{
+					"name": "Authenticate",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"john@gmail.com\",\n    \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/auth/authenticate"
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": {
+					"token": ""
+				}
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "AWS-EC2",
+			"item": [
+				{
+					"name": "Employee",
+					"item": [
+						{
+							"name": "Get All Employees",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{AWS_URL}}/api/employees"
+							},
+							"response": []
+						},
+						{
+							"name": "Add Employee",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\": \"Tahmina\",\n    \"lastName\": \"Alam\",\n    \"email\": \"mou@gmail.com\"\n}\n"
+								},
+								"url": "{{AWS_URL}}/api/employees"
+							},
+							"response": []
+						},
+						{
+							"name": "Update Employee",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"firstName\": \"Rahim\",\n    \"lastName\": \"Khayer 2\",\n    \"email\": \"rahim@gmail.com\"\n}"
+								},
+								"url": "{{AWS_URL}}/api/employees"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Employee by ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{AWS_URL}}/api/employees/1"
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Employee by ID",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "{{AWS_URL}}/api/employees/1"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Passenger",
+					"item": [
+						{
+							"name": "Get All Passengers",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{AWS_URL}}/api/passengers"
+							},
+							"response": []
+						},
+						{
+							"name": "Add Passenger",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"passengerName\": \"Saniyat\",\n    \"passengerEmail\": \"saniyat@gmail.com\",\n    \"passport\": \"EA00000001\"\n}"
+								},
+								"url": "{{AWS_URL}}/api/passengers"
+							},
+							"response": []
+						},
+						{
+							"name": "Update Passenger",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"passengerName\": \"Saniyat Al Ahmed\",\n    \"passengerEmail\": \"saniyat@gmail.com\",\n    \"passport\": \"EA00000001\"\n}"
+								},
+								"url": "{{AWS_URL}}/api/passengers"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Passenger by ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{AWS_URL}}/api/passengers/2"
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Passenger by ID",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "{{AWS_URL}}/api/passengers/1"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Sale",
+					"item": [
+						{
+							"name": "Get All Sales",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{AWS_URL}}/api/sales"
+							},
+							"response": []
+						},
+						{
+							"name": "Add Sale",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"createdAt\": \"2023-12-05\"\n}"
+								},
+								"url": "{{AWS_URL}}/api/sales"
+							},
+							"response": []
+						},
+						{
+							"name": "Update Sale",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"createdAt\": \"2023-12-06\"\n}"
+								},
+								"url": "{{AWS_URL}}/api/sales"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Sale by ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{AWS_URL}}/api/sales/1"
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Sale by ID",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "{{AWS_URL}}/api/sales/1"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Ticket",
+					"item": [
+						{
+							"name": "Get All Tickets",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{AWS_URL}}/api/tickets"
+							},
+							"response": []
+						},
+						{
+							"name": "Add Ticket",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"departure\": \"dhaka\",\n    \"destination\": \"india\",\n    \"journeyDate\": \"2023-12-06\",\n    \"airline\": \"biman\",\n    \"baseFare\": \"20000\",\n    \"tax\": \"505\",\n    \"totalFare\": \"30000\"\n}"
+								},
+								"url": "{{AWS_URL}}/api/tickets"
+							},
+							"response": []
+						},
+						{
+							"name": "Update Ticket",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 1,\n    \"departure\": \"dhaka\",\n    \"destination\": \"india\",\n    \"journeyDate\": \"2023-12-06T00:00:00.000+00:00\",\n    \"airline\": \"novo\",\n    \"baseFare\": 20000.0,\n    \"tax\": 505.0,\n    \"totalFare\": 30000.0\n}"
+								},
+								"url": "{{AWS_URL}}/api/tickets"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Ticket by ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{AWS_URL}}/api/tickets/1"
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Ticket by ID",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "{{AWS_URL}}/api/tickets/1"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "[AWS] Register",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstname\": \"Alam\",\n    \"lastname\": \"Mou\",\n    \"email\": \"alam@gmail.com\",\n    \"password\": \"1234567\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{AWS_URL}}/api/auth/register"
+					},
+					"response": []
+				},
+				{
+					"name": "[AWS] Authenticate",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"alam@gmail.com\",\n    \"password\": \"1234567\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{AWS_URL}}/api/auth/authenticate"
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": {
+					"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGFtQGdtYWlsLmNvbSIsImlhdCI6MTcwMjk3MzU5NSwiZXhwIjoxNzAyOTc1MDM1fQ.ugaNoRlLBh-N0nuW0O8Nrb6Y_XYAkiHaN3fAD82pXi8"
+				}
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
